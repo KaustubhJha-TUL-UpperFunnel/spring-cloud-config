@@ -1,0 +1,24 @@
+spring:
+    application:
+        name: Tata CLiQ Search
+    main:
+        banner-mode: 'log'
+    profiles:
+        active: prod
+        
+server:
+    port: 8080
+    servlet:
+        contextPath: /products
+      
+management:
+    endpoint:
+        refresh:
+            enabled: true
+    endpoints:
+        web:
+            exposure:
+                include: prometheus, health, info, metrics, refresh, loggers
+    health:
+        solr:
+            enabled: false
