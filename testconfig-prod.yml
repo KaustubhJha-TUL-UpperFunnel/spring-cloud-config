@@ -1,11 +1,3 @@
-spring:
-    application:
-        name: Tata CLiQ Search
-    main:
-        banner-mode: 'log'
-    profiles:
-        active: prod
-        
 server:
     port: 8080
     servlet:
