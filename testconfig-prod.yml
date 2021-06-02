@@ -15,7 +15,7 @@ management:
         solr:
             enabled: false
  
- search:
+search:
     pagination:
         size:
             limit: 60
